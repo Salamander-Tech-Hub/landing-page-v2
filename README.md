@@ -7,6 +7,7 @@ Create a new version of the Salamander Tech Hub's landing page. View the current
 - Work in groups of **4 to 5 people**
 - No group should have less than 4 people or more than 5 people
 - Solo work is **not allowed**
+- **The use of AI is allowed**
 
 ## Project Guidelines
 
@@ -34,7 +35,7 @@ Create a website inspired by the landing page that:
 ### 3. Judging Criteria
 Your website will be evaluated based on:
 
-1. **Identity** - Does the website embody the vision of the Salamander Tech Hub Community?
+1. **Identity** - Does the website embody the brand, vision, and plan of the Salamander Community?
 2. **Specialness** - Does the website have something about it that makes it unique?
 3. **UI/UX** - Does the website look good, and does it appear well-formed on both mobile and web?
 4. **Completeness** - Does the website and its parts work the way they are intended to?
