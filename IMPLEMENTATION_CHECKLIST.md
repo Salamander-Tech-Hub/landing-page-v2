@@ -3,6 +3,7 @@
 ## ✅ Deliverables Completed
 
 ### 1. Design System & Style Guide
+
 - [x] Color palette with hex codes (#FFFFFF, #FFD400, #0B0B0B, #F5F5F6, #9B9B9B)
 - [x] Typography system (Poppins headings, Inter body, 12px-56px scale)
 - [x] Spacing & grid system (8px base unit, responsive breakpoints)
@@ -13,6 +14,7 @@
 - [x] Responsive breakpoints (576px, 768px, 992px, 1200px)
 
 ### 2. HTML Pages (5 Total)
+
 - [x] `index.html` - Home page with hero, featured projects, mission
 - [x] `about.html` - Team, mission, values, story
 - [x] `projects.html` - Portfolio with filtering (9 projects)
@@ -23,6 +25,7 @@
 - [x] JSON-LD structured data on each page
 
 ### 3. Navigation & User Experience
+
 - [x] Sticky header with scroll effect (add shadow on scroll)
 - [x] Mobile hamburger menu (accessible, aria-expanded, focus trap)
 - [x] Responsive navigation (3-level breakpoint: mobile/tablet/desktop)
@@ -32,6 +35,7 @@
 - [x] Semantic HTML navigation structure
 
 ### 4. Hero Section (Home)
+
 - [x] Left-aligned heading (large, impactful)
 - [x] Supporting paragraph (readable line-height)
 - [x] Primary CTA button (yellow, hover scale/translateY)
@@ -41,6 +45,7 @@
 - [x] Grid layout (responsive: 2 cols → 1 col at 768px)
 
 ### 5. Projects Page & Filtering
+
 - [x] Responsive grid (3 cols desktop, 2 tablet, 1 mobile)
 - [x] 9 project cards with images, titles, taglines
 - [x] Tag system (multiple tags per project)
@@ -52,6 +57,7 @@
 - [x] Data attributes for filtering (`data-project-tag`)
 
 ### 6. Blog Page & Load More
+
 - [x] Featured article section (large image + excerpt)
 - [x] 2-column grid of blog cards (responsive)
 - [x] Category badges (yellow background)
@@ -63,6 +69,7 @@
 - [x] Hidden posts with `.hidden` class
 
 ### 7. About Page
+
 - [x] Mission statement section
 - [x] 3 core values cards (collaboration, innovation, growth)
 - [x] Team section with circular avatars
@@ -72,6 +79,7 @@
 - [x] Hover effects on team cards
 
 ### 8. Contact Page
+
 - [x] Contact form with 4 fields (Name, Email, Subject, Message)
 - [x] Form labels with proper `for` attributes and field IDs
 - [x] Required field validation (Name, Email, Message)
@@ -86,6 +94,7 @@
 - [x] Form reset after successful submission
 
 ### 9. Accessibility (WCAG AA)
+
 - [x] Color contrast ratios (4.5:1 for text, 3:1 for UI)
 - [x] Semantic HTML5 (`<header>`, `<main>`, `<nav>`, `<section>`, `<article>`, `<footer>`)
 - [x] Form labels with `<label for>` and field IDs
@@ -100,6 +109,7 @@
 - [x] Skip to main content link (optional but recommended)
 
 ### 10. Animations & Micro-interactions
+
 - [x] Button hover: scale + translateY + shadow
 - [x] Button focus: outline with yellow color
 - [x] Card hover: shadow lift + translateY
@@ -115,6 +125,7 @@
 - [x] All durations: 150ms (fast), 300ms (base), 500ms (slow)
 
 ### 11. Styling & CSS Architecture
+
 - [x] Single `styles.css` file (production-ready)
 - [x] CSS variables at root (colors, spacing, typography, shadows)
 - [x] No linear gradients (solid fills only)
@@ -126,6 +137,7 @@
 - [x] Proper cascading and specificity
 
 ### 12. JavaScript Functionality
+
 - [x] Navigation toggle (hamburger menu open/close)
 - [x] Active nav link detection (based on current page)
 - [x] Scroll-based header effects (add shadow)
@@ -142,6 +154,7 @@
 - [x] Well-commented code
 
 ### 13. Performance & SEO
+
 - [x] Lazy loading images (`loading="lazy"`)
 - [x] Descriptive alt text on all images
 - [x] Semantic HTML for search engines
@@ -155,6 +168,7 @@
 - [x] Fast paint performance
 
 ### 14. CSS Bootstrap Integration
+
 - [x] Bootstrap 5 CSS for responsive grid
 - [x] Responsive utilities (d-none, d-md-block, etc.)
 - [x] Grid system (row/col classes)
@@ -162,6 +176,7 @@
 - [x] Responsive padding/margins
 
 ### 15. File Organization
+
 - [x] `index.html` (Home)
 - [x] `about.html` (About)
 - [x] `projects.html` (Projects)
@@ -174,6 +189,7 @@
 - [x] Clean folder structure (easy navigation)
 
 ### 16. Documentation
+
 - [x] HTML file comments (explaining sections)
 - [x] CSS variable definitions (colors, spacing, typography)
 - [x] JavaScript function comments (purpose, parameters)
@@ -182,6 +198,7 @@
 - [x] Deployment instructions
 
 ### 17. Browser & Device Testing
+
 - [x] Works on Chrome/Edge (latest)
 - [x] Works on Firefox (latest)
 - [x] Works on Safari (latest)
@@ -192,6 +209,7 @@
 - [x] Hamburger menu on mobile
 
 ### 18. Code Quality
+
 - [x] No syntax errors
 - [x] Proper indentation
 - [x] Consistent naming conventions
@@ -206,6 +224,7 @@
 ## 🎯 Feature Checklist
 
 ### Navigation
+
 - [x] Sticky header
 - [x] Hamburger menu (mobile)
 - [x] Active page highlighting
@@ -213,6 +232,7 @@
 - [x] Accessible menu
 
 ### Home Page
+
 - [x] Hero section with CTA
 - [x] Featured projects
 - [x] Mission statement
@@ -220,6 +240,7 @@
 - [x] Call-to-action
 
 ### Projects Page
+
 - [x] Project grid (responsive)
 - [x] Project cards
 - [x] Filter bar
@@ -227,6 +248,7 @@
 - [x] Hover reveal actions
 
 ### Blog Page
+
 - [x] Featured article
 - [x] Blog grid
 - [x] Load more button
@@ -234,6 +256,7 @@
 - [x] Reading time
 
 ### About Page
+
 - [x] Mission section
 - [x] Core values
 - [x] Team section
@@ -241,6 +264,7 @@
 - [x] Company story
 
 ### Contact Page
+
 - [x] Contact form
 - [x] Form validation
 - [x] Success modal

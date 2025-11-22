@@ -230,22 +230,26 @@ Close button → Modal fades out + Slides down
 ## Common UI Patterns
 
 ### Section Background Colors
+
 - Default (white): #FFFFFF
 - Alternate (gray): #F5F5F6
 - Footer/CTA (black): #0B0B0B
 
 ### Link Styling
+
 Text color: #0B0B0B
 Hover color: #FFD400
 Underline: None (except in prose)
 
 ### Badge/Tag Styling
+
 Background: #F5F5F6 (light gray)
 Text: #9B9B9B (muted gray)
 Padding: 4px 8px
 Border-radius: 4px
 
 ### Success/Error Messages
+
 Success: Green background, white text
 Error: Red border, red text (#DC2626)
 Info: Yellow background, black text
