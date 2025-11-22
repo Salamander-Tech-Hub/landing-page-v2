@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initBlogLoadMore();
   initContactForm();
   initSmoothScroll();
+  initChatbot();
 });
 
 /* ===== NAVIGATION ===== */
@@ -326,7 +327,7 @@ function removeClass(selector, className) {
   });
 }
 
-/**
+/*
  * Check if element is in viewport
  */
 function isInViewport(element) {
@@ -338,4 +339,70 @@ function isInViewport(element) {
       (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+
+/* ===== CHATBOT ===== */
+function initChatbot() {
+  const chatbotButton = document.getElementById("chatbot-button");
+  const chatbotWindow = document.getElementById("chatbot-window");
+  const chatbotClose = document.getElementById("chatbot-close");
+  const chatbotInput = document.getElementById("chatbot-input");
+  const chatbotSend = document.getElementById("chatbot-send");
+  const chatbotMessages = document.getElementById("chatbot-messages");
+
+  if (!chatbotButton) return;
+
+  // Toggle chatbot window
+  chatbotButton.addEventListener("click", function () {
+    chatbotWindow.classList.toggle("active");
+    if (chatbotWindow.classList.contains("active")) {
+      chatbotInput.focus();
+    }
+  });
+
+  // Close chatbot
+  if (chatbotClose) {
+    chatbotClose.addEventListener("click", function () {
+      chatbotWindow.classList.remove("active");
+    });
+  }
+
+  // Send message
+  function sendMessage() {
+    const message = chatbotInput.value.trim();
+    if (!message) return;
+
+    // Add user message
+    const userMsg = document.createElement("div");
+    userMsg.className = "chatbot-message user";
+    userMsg.innerHTML = `<p>${escapeHtml(message)}</p>`;
+    chatbotMessages.appendChild(userMsg);
+
+    // Clear input
+    chatbotInput.value = "";
+
+    // Simulate bot response
+    setTimeout(() => {
+      const botMsg = document.createElement("div");
+      botMsg.className = "chatbot-message bot";
+      botMsg.innerHTML = `<p>Thanks for your message! Our team will get back to you soon.</p>`;
+      chatbotMessages.appendChild(botMsg);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }, 500);
+
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  chatbotSend.addEventListener("click", sendMessage);
+  chatbotInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  });
+}
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
 }

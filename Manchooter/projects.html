@@ -38,7 +38,14 @@
     <!-- HEADER & NAVIGATION -->
     <header>
       <nav class="navbar">
-        <a href="index.html" class="navbar__brand">🦎 Salamander</a>
+        <a href="index.html" class="navbar__brand">
+          <img
+            src="assets/images/salamander-logo-yellow.svg"
+            alt="Salamander Tech Hub Logo"
+            class="navbar__logo"
+          />
+          <span>Salamander</span>
+        </a>
 
         <ul class="navbar__menu" role="navigation" aria-label="Main navigation">
           <li><a href="index.html" class="navbar__link">Home</a></li>
@@ -61,25 +68,31 @@
     </header>
 
     <main>
-      <!-- PAGE HEADER -->
+      <!-- HERO SECTION WITH BACKGROUND IMAGE -->
       <section
+        class="hero hero--page"
         style="
-          padding: var(--spacing-3xl) var(--spacing-lg);
-          background-color: var(--color-gray-light);
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&h=900&fit=crop')
+              center/cover no-repeat;
         "
       >
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Our Projects</h1>
+            <p class="hero__subtitle">
+              Explore innovative solutions we've built for communities
+              worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT FILTER & GRID -->
+      <section>
         <div class="container">
-          <h1 style="text-align: center; margin-bottom: var(--spacing-md)">
-            Our Projects
-          </h1>
-          <p
-            style="
-              text-align: center;
-              color: var(--color-text-muted);
-              max-width: 700px;
-              margin: 0 auto;
-            "
-          >
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">
             A collection of innovative solutions built to solve real-world
             challenges and empower communities.
           </p>
@@ -167,7 +180,7 @@
             <!-- Project 3 -->
             <div class="projects__card" data-project-tag="ai">
               <img
-                src="https://images.unsplash.com/photo-1677442d019cecf8c56fe3e48ab21cb88a6641a9?w=400&h=200&fit=crop"
+                src="https://images.unsplash.com/photo-1685571537166-7b719b46c6cb?w=400&h=200&fit=crop"
                 alt="AI Assistant chatbot interface"
                 class="projects__image"
                 loading="lazy"
@@ -297,7 +310,7 @@
             <!-- Project 8 -->
             <div class="projects__card" data-project-tag="ai,research">
               <img
-                src="https://images.unsplash.com/photo-1677442d019cecf8c56fe3e48ab21cb88a6641a9?w=400&h=200&fit=crop"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
                 alt="Machine learning model development visualization"
                 class="projects__image"
                 loading="lazy"
@@ -323,7 +336,7 @@
             <!-- Project 9 -->
             <div class="projects__card" data-project-tag="web">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=400&h=200&fit=crop"
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=200&fit=crop"
                 alt="Educational platform course interface"
                 class="projects__image"
                 loading="lazy"
@@ -381,7 +394,14 @@
     <footer>
       <div class="footer__container">
         <div class="footer__section">
-          <h3>🦎 Salamander Tech Hub</h3>
+          <h3>
+            <img
+              src="assets/images/salamander-logo-yellow.svg"
+              alt="Salamander Logo"
+              class="footer__logo"
+            />
+            Salamander Tech Hub
+          </h3>
           <p>Building tools and communities for innovation.</p>
         </div>
         <div class="footer__section">
@@ -400,9 +420,21 @@
         <div class="footer__section">
           <h3>Connect</h3>
           <div class="footer__socials">
-            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
-            <a href="#" class="footer__social-link" aria-label="GitHub">◉</a>
-            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a
+              href="#"
+              class="footer__social-link icon-twitter"
+              aria-label="Twitter"
+            ></a>
+            <a
+              href="#"
+              class="footer__social-link icon-github"
+              aria-label="GitHub"
+            ></a>
+            <a
+              href="#"
+              class="footer__social-link icon-linkedin"
+              aria-label="LinkedIn"
+            ></a>
           </div>
         </div>
       </div>
@@ -418,5 +450,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- CHATBOT WIDGET -->
+    <button id="chatbot-button" aria-label="Open chat" title="Chat with us">
+      💬
+    </button>
+    <div id="chatbot-window">
+      <div class="chatbot-header">
+        <h3>Chat with Us</h3>
+        <button id="chatbot-close" aria-label="Close chat">×</button>
+      </div>
+      <div id="chatbot-messages"></div>
+      <div class="chatbot-input-area">
+        <input
+          type="text"
+          id="chatbot-input"
+          placeholder="Type your message..."
+          aria-label="Chat message input"
+        />
+        <button id="chatbot-send" aria-label="Send message">Send</button>
+      </div>
+    </div>
   </body>
 </html>
